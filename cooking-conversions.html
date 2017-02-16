@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cooking Conversions</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/calculator-styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/cooking-scripts.js"></script>
+  </head>
+  <body>
+    <div class ="container">
+      <h1>Cooking Conversions</h1>
+      <p>Use these for when shit gets weird in the kitchen.  Also use our <a href="index.html">Calculator</a> for simple mathematics like 5 divied by 9!</p>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Gallons to Liters</h2>
+          <form id="gal-to-lit">
+            <div class="form-group">
+              <label for="gals"># of Gallons:</label>
+              <input id="gals" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Convert!</button>
+          </form>
+          <br>
+          <div id="gal-to-lit-result">
+            <p>This is equal to <span id="gal-lit-output"></span> Liters!</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2>Liters to Gallons</h2>
+          <form id="lit-to-gal">
+            <div class="form-group">
+              <label for="lit"># of Liters:</label>
+              <input id="lit" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Convert!</button>
+          </form>
+          <br>
+          <div id="lit-to-gal-result">
+            <p>This is equal to <span id="lit-gal-output"></span> Gallons!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Fahrenheit to Celsius</h2>
+          <form id="fah-to-cels">
+            <div class="form-group">
+              <label for="fahinput">Degrees fahrenheit:</label>
+              <input id="fahinput" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Convert!</button>
+          </form>
+          <br>
+          <div id="fah-to-cels-result">
+            <p>This is equal to <span id="fah-cels-output"></span> degrees Celsius!</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2>Celsius to Fahrenheit</h2>
+          <form id="cels-to-fah">
+            <div class="form-group">
+              <label for="cels">Degrees Celsius:</label>
+              <input id="cels" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn">Convert!</button>
+          </form>
+          <br>
+          <div id="cels-to-fah-result">
+            <p>This is equal to <span id="cels-fah-output"></span> degrees fahrenheit!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
